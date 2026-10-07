@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #FAF7F2;
+  --color-chocolate: #432D23;
+  --color-antique-gold: #B58B4B;
+  --color-champagne-gold: #D6BC86;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-calligraphy: "Great Vibes", cursive;
+  
+  --background-image-paper-texture: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ivory text-chocolate font-sans antialiased bg-paper-texture;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.envelope-fold {
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+.envelope-body {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.liyawela-border {
+  background-image: radial-gradient(circle at 10px 10px, var(--color-antique-gold) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
