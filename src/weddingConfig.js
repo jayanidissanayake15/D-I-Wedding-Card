@@ -22,7 +22,7 @@ export const weddingConfig = {
   venue: {
     name: "Hotel Grand Palace",
     location: "Hikkaduwa",
-    mapUrl: "", // Keep empty until supplied
+    mapUrl: "https://maps.google.com/?q=Hotel+Grand+Palace,+44QF%2BR53,+Hikkaduwa", 
   },
   rsvp: {
     contacts: [

@@ -7,6 +7,7 @@ import RSVP from './components/RSVP';
 import Finishing from './components/Finishing';
 import { weddingConfig } from './weddingConfig';
 import { Volume2, VolumeX, Play } from 'lucide-react';
+import { FallingPetals } from './components/TraditionalDecorations';
 
 function App() {
   const [opened, setOpened] = useState(false);
@@ -82,6 +83,7 @@ function App() {
             <path d="M1440,500 L0,500 L0,300 C480,-100 960,500 1440,100 Z" />
             <path d="M1440,500 L0,500 L0,300 C480,-100 960,500 1440,100" stroke="#B58B4B" strokeWidth="2" fill="none" />
           </svg>
+          <FallingPetals />
         </div>
       )}
 

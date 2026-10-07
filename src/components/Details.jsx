@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
+import { AnimatedLamps } from './TraditionalDecorations';
 
 // Lotus Divider SVG
 const LotusDivider = () => (
@@ -111,6 +112,8 @@ export default function Details({ config }) {
           <p className="font-serif text-xl text-antique-gold font-medium">{config.time.poruwa}</p>
         </div>
       </div>
+      
+      <AnimatedLamps />
 
       <LotusDivider />
 
